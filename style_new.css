@@ -1,0 +1,347 @@
+/* Reset & Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: #fff;
+  color: #101010;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Navigation */
+.navbar {
+  position: sticky;
+  top: 0;
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #eceff1;
+  z-index: 100;
+}
+
+.nav-content {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 16px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-name {
+  font-weight: 600;
+  font-size: 1.1em;
+  color: #101010;
+}
+
+.nav-name:hover {
+  text-decoration: none;
+}
+
+.nav-links a {
+  font-size: 0.95em;
+  color: #455A64;
+  font-weight: 500;
+}
+
+.nav-links a:hover {
+  color: #101010;
+}
+
+/* Main Container */
+.main-container {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 24px;
+}
+
+/* Profile Section */
+.profile-section {
+  margin-bottom: 48px;
+}
+
+.profile-card {
+  display: flex;
+  gap: 32px;
+  align-items: flex-start;
+}
+
+.profile-image {
+  flex-shrink: 0;
+}
+
+.profile-image img {
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #eceff1;
+}
+
+.profile-info {
+  flex: 1;
+}
+
+.profile-name {
+  font-size: 1.8em;
+  font-weight: 700;
+  margin-bottom: 4px;
+  color: #101010;
+}
+
+.profile-location {
+  font-size: 0.9em;
+  color: #455A64;
+  margin-bottom: 8px;
+}
+
+.profile-affiliation {
+  font-size: 1em;
+  color: #37474F;
+  margin-bottom: 12px;
+}
+
+.profile-affiliation a {
+  color: #0277BD;
+}
+
+.profile-bio {
+  font-size: 0.95em;
+  color: #37474F;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.profile-links {
+  display: flex;
+  gap: 12px;
+}
+
+.social-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 8px;
+  background: #f5f5f5;
+  color: #455A64;
+  transition: all 0.2s ease;
+}
+
+.social-link:hover {
+  background: #e0e0e0;
+  color: #101010;
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+/* Section Styles */
+.section {
+  margin-bottom: 40px;
+}
+
+.section-title {
+  font-size: 1.1em;
+  font-weight: 700;
+  color: #101010;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #eceff1;
+}
+
+/* Cards Container */
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* Card Styles */
+.card {
+  border: 1px solid #eceff1;
+  border-radius: 12px;
+  padding: 16px 20px;
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.02);
+  transition: all 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  border-color: #cfd8dc;
+}
+
+.card-header {
+  margin-bottom: 8px;
+}
+
+.card-date {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #455A64;
+}
+
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.card-role {
+  font-size: 1em;
+  font-weight: 600;
+  color: #263238;
+}
+
+.card-org {
+  font-size: 0.95em;
+  color: #37474F;
+}
+
+.card-org a {
+  color: #0277BD;
+}
+
+.card-details {
+  font-size: 0.9em;
+  color: #455A64;
+  line-height: 1.5;
+}
+
+.card-details a {
+  color: #0277BD;
+}
+
+.card-details-list {
+  font-size: 0.9em;
+  color: #455A64;
+  margin-top: 8px;
+  padding-left: 20px;
+}
+
+.card-details-list li {
+  margin-bottom: 4px;
+}
+
+/* Publication Card */
+.pub-card .card-body {
+  gap: 8px;
+}
+
+.pub-title {
+  font-size: 1em;
+  font-weight: 600;
+  color: #263238;
+  line-height: 1.4;
+}
+
+.pub-title a:hover {
+  color: #0277BD;
+}
+
+.pub-authors {
+  font-size: 0.9em;
+  color: #455A64;
+  line-height: 1.5;
+}
+
+.pub-authors strong {
+  color: #101010;
+  font-weight: 600;
+}
+
+.pub-authors a:hover {
+  color: #0277BD;
+}
+
+.pub-links {
+  display: flex;
+  gap: 12px;
+  margin-top: 4px;
+}
+
+.pub-links a {
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #0277BD;
+  padding: 4px 10px;
+  background: #E3F2FD;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.pub-links a:hover {
+  background: #BBDEFB;
+  text-decoration: none;
+}
+
+/* Venue Badge */
+.venue {
+  display: inline-block;
+  padding: 3px 10px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  font-size: 0.85em;
+  font-weight: 500;
+  color: #455A64;
+}
+
+.venue-top {
+  background: #E3F2FD;
+  color: #0277BD;
+}
+
+/* Footer */
+.footer {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 24px;
+  text-align: center;
+  border-top: 1px solid #eceff1;
+}
+
+.footer p {
+  font-size: 0.85em;
+  color: #78909C;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .profile-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .profile-image img {
+    width: 120px;
+    height: 120px;
+  }
+
+  .profile-links {
+    justify-content: center;
+  }
+
+  .main-container {
+    padding: 24px 16px;
+  }
+
+  .card {
+    padding: 14px 16px;
+  }
+}

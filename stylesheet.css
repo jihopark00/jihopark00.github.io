@@ -1,0 +1,535 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Lato', Verdana, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #333;
+  background-color: #fff;
+}
+
+/* Container - matches Jon Barron template (800px) */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Links */
+a {
+  color: #1772d0;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #f09228;
+}
+
+/* ==================== */
+/* Introduction Section */
+/* (seohong.me style)   */
+/* ==================== */
+
+.intro-section {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.intro-content {
+  flex: 1;
+}
+
+.intro-photo {
+  flex-shrink: 0;
+}
+
+.intro-photo img {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Name - prominent */
+.name {
+  font-size: 32px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 12px;
+}
+
+/* Pronunciation guide */
+.pronunciation {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 16px;
+}
+
+/* Bio paragraph */
+.bio {
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  color: #333;
+}
+
+.bio strong {
+  color: #000;
+}
+
+/* Research question/statement */
+.research-question {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 16px;
+  font-style: italic;
+}
+
+/* Links row */
+.links {
+  font-size: 14px;
+  margin-top: 16px;
+}
+
+.links a {
+  font-weight: 400;
+}
+
+/* ==================== */
+/* Research Section     */
+/* ==================== */
+
+.research-section {
+  margin-bottom: 30px;
+}
+
+.research-section h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.research-intro {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Highlight text */
+span.highlight {
+  background-color: #ffffd0;
+  padding: 1px 3px;
+}
+
+/* ==================== */
+/* Publications         */
+/* (whwjdqls.github.io) */
+/* ==================== */
+
+.publications {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.publication {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.publication:hover {
+  background-color: #f9f9f9;
+}
+
+/* Highlighted publication */
+.publication.highlighted {
+  background-color: #ffffd0;
+}
+
+.publication.highlighted:hover {
+  background-color: #ffffc0;
+}
+
+/* Thumbnail */
+.pub-thumbnail {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.pub-thumbnail img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+/* Publication content */
+.pub-content {
+  flex: 1;
+}
+
+/* Paper title */
+.pub-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.pub-title:hover {
+  color: #1772d0;
+}
+
+/* Authors */
+.pub-authors {
+  font-size: 14px;
+  color: #333;
+  margin-bottom: 2px;
+}
+
+.pub-authors strong {
+  color: #000;
+}
+
+.pub-authors a {
+  color: #333;
+}
+
+.pub-authors a:hover {
+  color: #1772d0;
+}
+
+/* Venue */
+.pub-venue {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 6px;
+}
+
+/* Top venue highlight (CVPR, ICCV, NeurIPS, etc.) */
+.pub-venue.venue-top {
+  color: #e57373;
+  font-weight: 600;
+}
+
+/* Award/highlight badge */
+.pub-award {
+  display: inline-block;
+  background-color: #d9534f;
+  color: white;
+  font-size: 10px;
+  font-weight: 700;
+  padding: 1px 6px;
+  border-radius: 2px;
+  margin-left: 6px;
+  text-transform: uppercase;
+}
+
+/* Description */
+.pub-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 4px;
+}
+
+/* Links */
+.pub-links {
+  font-size: 14px;
+}
+
+.pub-links a {
+  margin-right: 8px;
+  color: #1772d0;
+}
+
+.pub-links a:hover {
+  color: #f09228;
+}
+
+/* ==================== */
+/* Projects Section     */
+/* (simpler, less emphasis) */
+/* ==================== */
+
+.project-section {
+  margin-bottom: 30px;
+}
+
+.project-section h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.project {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 16px;
+  border-radius: 4px;
+}
+
+.project:hover {
+  background-color: #f9f9f9;
+}
+
+/* Project thumbnail */
+.proj-thumbnail {
+  flex-shrink: 0;
+  width: 200px;
+}
+
+.proj-thumbnail img {
+  width: 200px;
+  height: auto;
+  object-fit: contain;
+  border-radius: 2px;
+}
+
+/* Project content */
+.proj-content {
+  flex: 1;
+}
+
+/* Project title */
+.proj-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1772d0;
+  line-height: 1.4;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.proj-title:hover {
+  color: #f09228;
+}
+
+/* Project description */
+.proj-description {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+ul.proj-description {
+  padding-left: 1.2em;
+  margin: 0 0 6px 0;
+  font-size: 12px;
+}
+
+ul.proj-description li {
+  padding-left: 0.3em;
+}
+
+.proj-date {
+  font-size: 12px;
+  color: #777;
+  font-style: italic;
+}
+
+/* Project links */
+.proj-links {
+  font-size: 14px;
+}
+
+.proj-links a {
+  margin-right: 8px;
+  color: #1772d0;
+}
+
+.proj-links a:hover {
+  color: #f09228;
+}
+
+/* ==================== */
+/* Education Section    */
+/* ==================== */
+
+.education-section {
+  margin-bottom: 30px;
+}
+
+.education-section h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.education {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.edu-item {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  padding: 10px 16px;
+  border-radius: 4px;
+}
+
+.edu-item:hover {
+  background-color: #f9f9f9;
+}
+
+.edu-logo {
+  flex-shrink: 0;
+  width: 45px;
+  height: 45px;
+}
+
+.edu-logo img {
+  width: 45px;
+  height: 45px;
+  object-fit: contain;
+}
+
+.edu-content {
+  flex: 1;
+  line-height: 1.4;
+}
+
+.edu-content strong {
+  color: #000;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.edu-content a {
+  color: #555;
+  font-size: 13px;
+}
+
+.edu-content a:hover {
+  color: #1772d0;
+}
+
+.edu-date {
+  font-size: 12px;
+  color: #888;
+  font-style: italic;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+/* ==================== */
+/* Footer               */
+/* ==================== */
+
+footer {
+  margin-top: 30px;
+  padding-top: 16px;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+footer p {
+  font-size: 12px;
+  color: #888;
+}
+
+footer a {
+  color: #888;
+}
+
+footer a:hover {
+  color: #1772d0;
+}
+
+/* ==================== */
+/* Responsive Design    */
+/* ==================== */
+
+@media (max-width: 768px) {
+  .intro-section {
+    flex-direction: column-reverse;
+    text-align: center;
+    gap: 16px;
+  }
+
+  .intro-photo {
+    margin: 0 auto;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .research-question {
+    border-left: none;
+    padding-left: 0;
+    text-align: center;
+  }
+
+  .publication {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .pub-thumbnail {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .pub-thumbnail img {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .project {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .proj-thumbnail {
+    width: 100%;
+    max-width: 200px;
+  }
+
+  .proj-thumbnail img {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 16px 12px;
+  }
+
+  .name {
+    font-size: 24px;
+  }
+}

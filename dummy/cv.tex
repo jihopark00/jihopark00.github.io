@@ -1,0 +1,457 @@
+%-------------------------
+% Resume in Latex
+% Author : Aras Gungore
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+\usepackage{academicons}
+%for publications
+\usepackage[style=authoryear,sorting=ynt, maxbibnames=2]{biblatex}
+
+
+%---------- FONT OPTIONS ----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeSubSubheading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeEducationHeading}[6]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+      \textit{\small#5} & \textit{\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+
+\newcommand{\resumeProjectHeading}[2]{
+    \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+
+\newcommand{\resumeOrganizationHeading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textit{\small #2} \\
+      \textit{\small#3}
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%---------- HEADING ----------
+
+\begin{center}
+    \textbf{\Huge \scshape Jiho Park} \\ \vspace{3pt}
+    \small
+    % \faMobile \hspace{.5pt} \href{tel:8201046596576}{+8201046596576}
+    % $|$
+    \hspace{1pt}
+    \href{mailto:qkrwlgh0314@yonsei.ac.kr}{qkrwlgh0314@yonsei.ac.kr}
+    $|$
+    \href{https://jiho314.github.io/about/}{https://jiho314.github.io}
+    $|$
+    % \faLinkedinSquare \hspace{.5pt} \href{https://www.linkedin.com/in/jung-bin-cho-55302b266/}{LinkedIn}
+    % $|$
+    \fagithub \hspace{.5pt} \href{https://github.com/jiho314}{GitHub}
+
+\end{center}
+
+
+
+
+
+%----------- EDUCATION -----------
+
+\section{Education}
+  \vspace{3pt}
+  \resumeSubHeadingListStart
+
+    \resumeEducationHeading
+      {Korea Advanced Institute of Science and Technology (KAIST)}{Seoul, Korea}
+      {M.S. in Artificial Intelligence}{Mar 2026 - Present}
+      {Advisor: \href{https://cvlab.kaist.ac.kr/}{Seungryong Kim}}{}
+
+    \resumeEducationHeading
+      {Yonsei University}{Seoul, Korea}
+      {B.S. in Electrical \& Electronic Engineering}{Mar 2019 - Feb 2026}
+      {}{GPA: 4.10/4.30 (3.94/4.0)}
+
+    \resumeEducationHeading
+      {The University of Texas at Austin}{Texas, USA}
+      {Exchange Student in Electrical and Computer Engineering}{Aug 2024 - Dec 2024}
+      {}{GPA: 4.0/4.0}
+
+  \resumeSubHeadingListEnd
+  
+\vspace{-20pt}
+\section{Research Interest}
+\vspace{1pt}
+Self-supervised Learning, Generative Modeling, Robot Learning
+\resumeItemListStart
+    \vspace{-5pt}
+\resumeItemListEnd
+
+\section{Publications}
+\vspace{3pt}
+\begin{itemize}[leftmargin=*, label={}]
+    \item \textbf{CAMEO: Correspondence-Attention Alignment for Multi-View Diffusion Models}\\
+    Minkyung Kwon\textsuperscript{*}, Jinhyeok Choi\textsuperscript{*}, \textbf{Jiho Park}\textsuperscript{*}, Seonghu Jeon, Jinhyuk Jang, Junyoung Seo, Minseop Kwak, Jin-Hwa Kim, Seungryong Kim\\
+    \textit{CVPR 2026}
+
+    \item \textbf{Better Source, Better Flow: Learning Condition-Dependent Source Distribution for Flow Matching}\\
+    Junwan Kim\textsuperscript{*}, \textbf{Jiho Park}\textsuperscript{*}, Seonghu Jeon, Seungryong Kim\\
+    \textit{arXiv preprint (under review)}
+
+    \item \textbf{ReNoV: Projected Representation Conditioning for High-fidelity Novel View Synthesis}\\
+    Minseop Kwak\textsuperscript{*}, Minkyung Kwon\textsuperscript{*}, Jinhyeok Choi\textsuperscript{*}, \textbf{Jiho Park}, Seungryong Kim\\
+    \textit{arXiv preprint}
+\end{itemize}
+
+% I am interested in how we can enable agents to obtain actionable insights from observations within a dynamic 3D world.
+
+
+% Therefore, I have a broad research interest in the fields of Egocentric Multi-sensory Learning, Reinforcement Learning, Self-supervised Representation Learning, and Energy-based Modeling among others.
+% I believe we should develop the perception understanding
+% perception to make informed decisions and take meaningful actions. 
+
+% Learning, aiming to integrate perception with actionable insights.
+
+
+% Therefore, I've wide research interest in field of Energy-based/Flow-matching model, Egocentric Multi Sensory Learning, Robot Learning, 3D Representation etc...
+
+
+% - Energy-based/Flow-matching Models \newline
+% I'm interested in modeling which generate the data optimization-based (e.g. Diffusion Forcing, Longhorn, Test time Training in SSM
+
+% recent papers Diffusion Forcing, Longhorn,
+% Reasoning w/ Energy model
+
+% - Multi-Sensory Learning
+% I believe that Agent must learn more from 
+
+
+% - Geometric Deep Learning, RL, Logical Reasoning
+
+
+
+%----------- EXPERIENCE -----------
+% \vspace{-5pt}
+\section{Research Experiences}
+\vspace{2pt}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {CVLab, Korea Advanced Institute of Science and Technology}{Apr 2025 - Present}
+    {Undergraduate Intern (Advisor: \href{https://cvlab.kaist.ac.kr/members/faculty}{Seungryong Kim})}{}
+
+    \resumeSubheading
+    {Research Collaboration in UT Austin}{Oct 2024 - Feb 2025}
+    {Undergraduate Researcher (Collaborator: \href{https://scholar.google.com/citations?user=tdoBO3UAAAAJ}{Zhiwen Fan})}{}
+
+    \resumeSubheading
+    {MLCS Lab, Yonsei University}{Apr 2024 - Jul 2024}
+    {Undergraduate Intern (Advisor: \href{https://scholar.google.com/citations?user=Z-UlU3MAAAAJ}{Jongeun Choi})}{}
+
+    \resumeSubheading
+    {MIR Lab, Yonsei University}{Aug 2023 - Jan 2024}
+    {Undergraduate Intern}{}
+
+\resumeSubHeadingListEnd
+
+\section{Work Experiences}
+% \vspace{2pt}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {\href{https://rebuilderai.com}{RebuilderAI} $|$ \textnormal{\textit{Seoul, Korea}}}{Jul 2023 - Sep 2023}
+    {Part-time Research Assistant, Industry-Academic Cooperation}{}
+    \resumeItemListStart
+        \resumeItem{Background image generation for commercial product using a diffusion model}
+        \resumeItemListStart
+            \resumeItem{Finetuned ControlNet with image-segmentation datasets; \newline Pretrained on MS COCO dataset and then fine-tuned on custom-built comercial product image dataset}
+            \vspace{3pt}
+        \resumeItemListEnd
+        \resumeItem{Saliency-aware Segmentation for commercial product image }
+        \resumeItemListStart
+            \resumeItem{Compared SAM and fine-tuned InSPyReNet for precise segmentation \newline Applied mask clipping and jointBilateralFilter, and achieved validation miou of 0.96}
+        \resumeItemListEnd
+        
+        % \vspace{-\baselineskip} % Reduce space here
+    \resumeItemListEnd
+    % \vspace{5pt}
+    % \resumeSubheading
+    % {\href{https://www.uaround.ai/}{Uaround} $|$ \textnormal{\textit{Seoul, Korea}}}{May 2022 - Jun 2022}
+    % {Industry-Academic Cooperation}{}
+    % \resumeItemListStart
+    %     \resumeItem{2D Face similarity modeling for virtual human}
+    % \resumeItemListEnd
+\resumeSubHeadingListEnd
+%----------- PROJECTS -----------
+\section{Projects}
+\vspace{3pt}    
+\resumeSubHeadingListStart
+    \resumeProjectHeading
+    {\textbf{4D Head Reconstruction with Deformable Gaussian Splatting} \href{https://github.com/whwjdqls/4D-Gaussian-Head}{\textit{(\underline{github})}}}{Oct 2023 - Nov 2023}
+    \resumeItemListStart
+    \resumeItem{Applied deformable 3D Gaussian Splatting methods along with facial expression prior from FLAME for better facial reconstruction}
+    \resumeItem{Awarded 1st place in the 3rd YAICON(Yonsei AI Club Conference)}
+    \resumeItemListEnd
+    
+    % \resumeProjectHeading
+    % {\textbf{OOD Detection Research Project} \href{https://jiho314.github.io/assets/MNIST_OOD_HSCAE.pdf}{\textit{(\underline{report)}}}}{Jun 2023}
+    % \resumeItemListStart
+    % % \resumeItem{Explored the properties of Generative Model for OOD Detection, with Hierarchical Self-Conditioned AutoEncoder}
+    % % \resumeItem{Achieved 1st place in the DeepLearningLab(EEE4423) course; }
+    % \resumeItemListEnd
+    
+    \resumeProjectHeading{\textbf{Camera Pose Estimation for Tensor Radiance Fields} 
+    \href{https://jiho314.github.io/assets/nope-tensorf.pdf}{\textit{(\underline{report})}}}{Sep 2023 - Nov 2023}
+    \resumeItemListStart
+        \resumeItem{Explored the properties of depth-driven point cloud based camera pose optimization in Tensor Radiance Field }
+    \resumeItemListEnd
+    
+    % 
+    % \vspace{1pt}
+    \resumeProjectHeading{\textbf{Diffusion Model Web Application Project} \href{https://github.com/devch1013/YAICON-Ditto}{\textit{(\underline{github})}}}{Apr 2023 - May 2023}
+    \resumeItemListStart
+        \resumeItem{Sketch \& Prompt to Image using ControlNet; fine-tuned the model and applied to the web server}
+        \resumeItem{Awarded 1st place in the 2nd YAICON}
+    \resumeItemListEnd
+    % % 
+    % \resumeProjectHeading{\textbf{Virtual Hand Drawing Simulator} \href{https://github.com/jiho314/Unity_HandTracking_DeepLearning.git}{\textit{(github)}}}{Nov 2022 - Dec 2022} 
+    % % \resumeItemListStart
+    % \resumeItem{Unity, Python communication project }
+    % \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+
+%----------- Scholarship -----------
+
+\section{Scholarships}
+\vspace{6pt}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Korea-U.S. Advanced Technology Youth Exchange Scholarship}{Fall 2024}
+    {by Institute of International Education(IIE) and Korea Institute for Advancement of Technology(KIAT)}{}
+    \resumeItemListStart
+        \resumeItem{approx. 9,000 USD for single semester in University of Texas at Austin}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {Yonsei Veritas(High-academic Performers) Scholarship}{}
+    {}{}
+    \vspace{-17pt}
+    \resumeItemListStart
+        \resumeItem{Honors(top 10\%): Spring 2022, Fall 2022}
+        \resumeItem{High Honors(top 3\%): Spring 2023, Fall 2023}
+    \resumeItemListEnd
+    
+    \resumeSubheading
+    {Hanseong Son Jae Han Nobel Scholarship}{2017 - 2018}
+    {}{}
+    \vspace{-17pt}
+    \resumeItemListStart
+        \resumeItem{approx. 9,000 USD(awarded annually to 200 high school students in Korea)}
+    \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+%----------- Military -----------
+
+\section{Military Service}
+\vspace{6pt}
+\resumeSubHeadingListStart
+    \resumeSubheading
+    {Republic of Korea Army Sergeant, Honorably Discharged}{Sep 2020 - Mar 2022}
+    {Heavy Vehicle and Commander Driver}{}    
+\resumeSubHeadingListEnd
+%----------- Skills -----------
+
+\section{Skills}
+\vspace{6pt}
+\resumeSubHeadingListStart
+    \resumeSubItem{\textbf{Programming:} Python, Linux(tmux, slurm), Git, C/C++, C\#(Unity), Verilog}
+    % \resumeSubItem{\textbf{Machine Learning:}}
+    % \resumeItemListStart
+    %     \resumeItem{3D Representations: NeRF, Gaussian Splattings, FLAME/SMPL}
+    %     \resumeItem{Generative Models: Diffusion, VQ-VAE}
+    %     \resumeItem{Reinforcement Learning: Mujoco}
+    % \resumeItemListEnd
+    \resumeSubItem{\textbf{Languages:} Korean(Native), English(Proficient, TOEFL: 103)}
+\resumeSubHeadingListEnd
+
+
+
+%----------- RELEVANT COURSEWORK -----------
+
+% \section{Relevant Coursework}
+  % \vspace{2pt}
+  % \resumeSubHeadingListStart
+    % \small{\item{
+        % \textbf{Major coursework:}{ Materials Science, Electrical Circuits I-II, Digital System Design, Numerical Methods, Probability Theory, Electronics I-II, Signals and Systems, Electromagnetic Field Theory, Energy Conversion, System Dynamics and Control, Communication Engineering, Pattern Recognition, Introduction to Digital Signal Processing, Introduction to Digital Communications, Introduction to Database Systems, Introduction to Image Processing, Machine Vision} \\ \vspace{3pt}
+        
+        % \textbf{Minor coursework:}{ Discrete Computational Structures, Introduction to Object-Oriented Programming, Data Structures and Algorithms, Computer Organization, Fundamentals of Software Engineering}
+    % }}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- CERTIFICATES -----------
+
+% \section{Certificates}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Procter \& Gamble VIA Certificate Program}{Feb 2022}{Project Management and Personal Productivity}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- ORGANIZATIONS -----------
+
+% \section{Organizations}
+  % \resumeSubHeadingListStart
+    
+    % \resumeOrganizationHeading
+      % {Institute of Electrical and Electronics Engineers (IEEE)}{Feb 2022 -- Present}{Student Member}
+    
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- HOBBIES -----------
+
+% \section{Hobbies}
+  % \resumeSubHeadingListStart
+    % \small{\item{Basketball, Swimming, Fitness, Eight-ball, Horology}}
+  % \resumeSubHeadingListEnd
+
+
+
+%----------- REFERENCES -----------
+
+% \section{References}
+  % \vspace{2pt}
+  % \resumeSubHeadingListStart
+    % \item{References available upon request.}
+  % \resumeSubHeadingListEnd
+
+%----------- AWARDS & ACHIEVEMENTS -----------
+
+% \section{Awards \& Achievements}
+%   \vspace{2pt}
+%   \resumeSubHeadingListStart
+%     \small{\item{
+%         \textbf{High Honors Degree:}{ Awarded to Bachelor alumni who have graduated with a GPA greater than or equal to 3.50 by Boğaziçi University. (Jul 2023)} \\ \vspace{3pt}
+
+%         \textbf{TÜBİTAK 2247-C Intern Researcher Scholarship:}{ Awarded to students who take part in research projects carried out by the Scientific and Technological Research Council of Turkey (TÜBİTAK). (Dec 2021 \textbf{--} Jun 2022)} \\ \vspace{3pt}
+    
+%         % \textbf{National University Admission Exam (YKS):}{ Ranked $75^{th}$ in Mathematics and Science among ca. 2.3 million candidates with a test score of 489.92/500. (Jul 2018)} \\ \vspace{3pt}
+        
+%         \textbf{KYK Outstanding Success Scholarship:}{ Awarded to students who have been ranked in the top 100 on National University Admission Exam by Higher Education Credit and Hostels Institution (KYK). (Sep 2018 \textbf{--} Jun 2023)} \\ \vspace{3pt}
+        
+%         % \textbf{Boğaziçi University Success Scholarship:}{ Awarded to students who have been ranked in the top 100 on National University Admission Exam by Boğaziçi University. (Sep 2018 \textbf{--} Jun 2023)} \\ \vspace{3pt}
+        
+%         \textbf{Kocaeli Science High School Valedictorian Award:}{ Graduated as the highest ranked student. (Jun 2018)}
+%     }}
+%   \resumeSubHeadingListEnd
+
+
+
+
+%-------------------------------------------
+\end{document}
