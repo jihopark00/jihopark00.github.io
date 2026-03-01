@@ -442,6 +442,16 @@ ul.proj-description li {
   white-space: nowrap;
 }
 
+.edu-degree {
+  font-size: 13px;
+  color: #555;
+}
+
+.edu-gpa {
+  font-size: 11px;
+  color: #888;
+}
+
 /* ==================== */
 /* Footer               */
 /* ==================== */
