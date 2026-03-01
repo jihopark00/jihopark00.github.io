@@ -1,8 +1,6 @@
 # Personal Academic Website
 
-A personal academic website template based on [Jon Barron's website](https://github.com/jonbarron/jonbarron.github.io), with styling inspired by:
-- Introduction section: [seohong.me](https://seohong.me/)
-- Publications section: [whwjdqls.github.io](https://whwjdqls.github.io/)
+A personal academic website template based on [Jon Barron's website](https://github.com/jonbarron/jonbarron.github.io)
 
 ## Setup
 
