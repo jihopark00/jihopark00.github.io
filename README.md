@@ -43,5 +43,5 @@ A personal academic website template based on [Jon Barron's website](https://git
 
 
 
-<!-- cd /home/ljeadec31/opt/page && python3 -m http.server 8001  -->
+<!-- python3 -m http.server 8001  -->
 <!-- pkill -f "python3 -m http.server 8000" -->

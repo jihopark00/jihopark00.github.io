@@ -111,6 +111,42 @@ a:hover {
 /* Research Section     */
 /* ==================== */
 
+.news-section {
+  margin-bottom: 30px;
+}
+
+.news-section h2 {
+  font-size: 22px;
+  font-weight: 400;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.news-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.news-list li {
+  padding: 4px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.news-list li:last-child {
+  border-bottom: none;
+}
+
+.news-date {
+  font-weight: 600;
+  color: #555;
+  margin-right: 8px;
+  min-width: 70px;
+  display: inline-block;
+}
+
 .research-section {
   margin-bottom: 30px;
 }
