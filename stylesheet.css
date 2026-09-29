@@ -25,12 +25,12 @@ body {
 
 /* Links */
 a {
-  color: #1772d0;
+  color: #3f6178;
   text-decoration: none;
 }
 
 a:hover {
-  color: #f09228;
+  color: #1772d0;
 }
 
 /* ==================== */
@@ -306,11 +306,11 @@ span.highlight {
 
 .pub-links a {
   margin-right: 8px;
-  color: #1772d0;
+  color: #3f6178;
 }
 
 .pub-links a:hover {
-  color: #f09228;
+  color: #1772d0;
 }
 
 /* ==================== */
@@ -369,14 +369,14 @@ span.highlight {
 .proj-title {
   font-size: 14px;
   font-weight: 700;
-  color: #1772d0;
+  color: #3f6178;
   line-height: 1.4;
   display: block;
   margin-bottom: 4px;
 }
 
 .proj-title:hover {
-  color: #f09228;
+  color: #1772d0;
 }
 
 /* Project description */
@@ -410,11 +410,11 @@ ul.proj-description li {
 
 .proj-links a {
   margin-right: 8px;
-  color: #1772d0;
+  color: #3f6178;
 }
 
 .proj-links a:hover {
-  color: #f09228;
+  color: #1772d0;
 }
 
 /* ==================== */
