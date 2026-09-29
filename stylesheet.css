@@ -267,7 +267,7 @@ span.highlight {
 
 /* Top venue highlight (CVPR, ICCV, NeurIPS, etc.) */
 .pub-venue.venue-top {
-  color: #e57373;
+  color: #000;
   font-weight: 600;
 }
 
